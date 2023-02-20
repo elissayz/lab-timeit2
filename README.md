@@ -227,12 +227,12 @@ measure the runtime and enter it into the table.
 
 |                            | `array`  | `list`  | `tuple`     | `deque`       |
 | -------------------------- | ---------| --------|------------ | ------------- |
-| `sequential_search_itr`    |          |         |             |               |
-| `sequential_search_itr2`   |          |         |             |               |
+| `sequential_search_itr`    | 6.7 msec |1.25 msec| 1.05 msec   | 1.33 msec     |
+| `sequential_search_itr2`   |9.23 msec |2.1 msec | 2.51 msec   | 98 msec       |
 | `sequential_search_rec`    |  ---     | ---     |  ---        |  ---          |
-| `binary_search_itr`        |          |         |             |               |
-| `binary_search_rec`        |          |         |             |               |
-| `binary_search_rec2`       |          |         |             |  ---          |
+| `binary_search_itr`        | 9.8 usec |2.71 usec| 2.53 usec   |  150 usec     |
+| `binary_search_rec`        | 10.2 usec|4.89 usec| 2.34 usec   |  162 usec     |
+| `binary_search_rec2`       |9.29 usec | 334 usec| 453 usec    |  ---          |
 
 You should notice that:
 1. for the `array` container, all implementations of binary search work well
